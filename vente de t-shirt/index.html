@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 350px;
+        }
+        .size span {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Client</legend>
+            <div>
+                <label for="n-id">Nom et prénom :</label>
+                <input type="text" pattern="[A-Z]{3,10} [A-Z]{1}[a-z]{1,10}" id="n-id" placeholder="Nom et prénom">
+            </div>
+            <div>
+                <label for="a-id">Adresse :</label>
+                <input type="text" id="a-id">
+            </div>
+            <div>
+                <label for="cp-id">Code Postal :</label>
+                <input type="text" id="cp-id" pattern="[0-9]{5}">
+            </div>
+            <div>
+                <label>Pays :</label>
+                <input type="text" value="France" disabled>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Commande</legend>
+            <div>
+                <label for="">Modèle :</label>
+                <input type="text" value="Road 66" disabled>
+            </div>
+            <div>
+                <label for="">Taille :</label>
+                <br>
+                <input type="range" value="1" min="1" max="4">
+                <div class="size">
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+            </div>
+            <div>
+                <label for="">Quantité :</label>
+                <input type="number" value="1" min="1" max="165" step="3">
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Commander</button>
+            <button type="reset">Recommencer</button>
+        </div>
+    </form>
+</body>
+</html>
