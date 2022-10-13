@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" pattern="^[A-z]{2,45}$">
+        </div>
+        <div>
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" pattern="^[A-z]{2,45}$">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" 
+                id="email" 
+                pattern="^(.+@.+.com)$|^(.+@.+.net)$|^(.+@.+.fr)$|^(.+@.+.org)$">
+        </div>
+        <div>
+            <label for="sex">Sexe</label>
+            <input type="radio" name="sexe"> masculin
+            <input type="radio" name="sexe" checked> féminin
+        </div>
+        <div>
+            <label for="photo">Photo</label>
+                <input type="file"
+                    id="photo" name="photo"
+                    accept="image/png, image/jpeg">
+        </div>
+        <div>
+            <label for="pays">Pays</label>
+            <div>
+                <select id="pays">
+                    <option value="FRANCE">FRANCE</option>
+                    <option value="ANGLETERRE">ANGLETERRE</option>
+                    <option value="ALLEMAGNE" selected>ALLEMAGNE</option>
+                    <option value="ITALIE">ITALIE</option>
+                    <option value="SUISSE">SUISSE</option>
+                    <option value="ESPAGNE">ESPAGNE</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <p>
+                <label for="langues">Des langues</label>
+            </p>
+            <select name="langues" id="langues" multiple>
+                <option value="fr">française</option>
+                <option value="an">anglaise</option>
+                <option value="all">allemande</option>
+                <option value="it">italienne</option>
+                <option value="esp">espagnole</option>
+            </select>
+        </div>
+        <div>
+            <p>Le domaine d'activité</p>
+            <ul>
+                <li>
+                    <label for="plombier">Plombier
+                        <input type="checkbox" name="plombier" id="plombier">
+                    </label>
+                </li>
+                <li><label for="electricien">Électricien
+                        <input type="checkbox" name="electricien" id="electricien">
+                    </label>
+                </li>
+                <li>
+                    <label for="macon">Maçon
+                        <input type="checkbox" name="macon" id="macon">
+                    </label>
+                </li>
+                <li>
+                    <label for="carreleur">Carreleur
+                        <input type="checkbox" name="carreleur" id="carreleur">
+                    </label>
+                </li>
+                <li>
+                    <label for="menuisier">Menuisier
+                        <input type="checkbox" name="menuisier" id="menuisier">
+                    </label>
+                </li>
+                <li>
+                    <label for="couvreur">Couvreur
+                        <input type="checkbox" name="couvreur" id="couvreur">
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
