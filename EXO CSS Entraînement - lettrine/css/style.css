@@ -1,0 +1,25 @@
+div {
+    box-sizing: border-box;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+div > p::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+}
+
+div > p + p::first-letter {
+    font-size: inherit;
+    color: inherit;
+}
+
+div > p + p::first-line {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: blue;
+}
