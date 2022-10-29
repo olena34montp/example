@@ -1,0 +1,15 @@
+ul {
+    max-width: 200px;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+main > ul > li + li{
+    background-color: blue;
+}
+
+main > ul > li + li + li {
+    background-color: white;
+}
