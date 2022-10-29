@@ -1,0 +1,21 @@
+.rendu-1 h1::after{
+    content: "#";
+}
+
+.rendu-2 h1::after {
+    content: "\2665";
+}
+
+.rendu-3 h1::after {
+    content: "\2665";
+}
+
+.rendu-3 h1::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../arrow.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
