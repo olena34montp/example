@@ -1,0 +1,20 @@
+body {
+    max-width: 600px;
+}
+
+div {
+    background-image: url(../koala.png);
+    background-size: 30px;
+    padding: 2% 40% 10%;
+}
+
+.container {
+    padding: 1px;
+    background-color: #fff;
+    background-image: none;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+}
