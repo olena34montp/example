@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+}
+
+.chessboard {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+    background-image: url(../bg-1.png);
+}
+
+.chessboard ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 50px;
+}
+
+.chessboard ul li{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 3px 0 0 3px;
+}
+
+.white li {
+    background-color: #fff;
+}
+
+.black li {
+    background-color: #000;
+}
+
+/*White*/
+
+.white li:nth-of-type(1) {
+    grid-area: 1 / 2;
+}
+
+.white li:nth-of-type(2) {
+    grid-area: 1 / 4;
+}
+
+.white li:nth-of-type(3) {
+    grid-area: 1 / 6;
+}
+
+.white li:nth-of-type(4) {
+    grid-area: 1 / 8;
+}
+
+.white li:nth-of-type(5) {
+    grid-area: 1 / 10;
+}
+
+.white li:nth-of-type(6) {
+    grid-area: 2 / 1;
+}
+
+.white li:nth-of-type(7) {
+    grid-area: 2 / 3;
+}
+
+.white li:nth-of-type(8) {
+    grid-area: 2 / 5;
+}
+
+.white li:nth-of-type(9) {
+    grid-area: 2 / 7;
+}
+
+.white li:nth-of-type(10) {
+    grid-area: 2 / 9;
+}
+
+.white li:nth-of-type(11) {
+    grid-area: 3 / 2;
+}
+
+.white li:nth-of-type(12) {
+    grid-area: 3 / 4;
+}
+
+.white li:nth-of-type(13) {
+    grid-area: 3 / 6;
+}
+
+.white li:nth-of-type(14) {
+    grid-area: 3 / 8;
+}
+
+.white li:nth-of-type(15) {
+    grid-area: 3 / 10;
+}
+
+.white li:nth-of-type(16) {
+    grid-area: 4 / 1;
+}
+
+.white li:nth-of-type(17) {
+    grid-area: 4 / 3;
+}
+
+.white li:nth-of-type(18) {
+    grid-area: 4 / 5;
+}
+
+.white li:nth-of-type(19) {
+    grid-area: 4 / 7;
+}
+
+.white li:nth-of-type(20) {
+    grid-area: 4 / 9;
+}
+
+/*Black*/
+
+.black  li:nth-of-type(1) {
+    grid-area: 1 / 1;
+}
+
+.black  li:nth-of-type(2) {
+    grid-area: 1 / 3;
+}
+
+.black  li:nth-of-type(3) {
+    grid-area: 1 / 5;
+}
+
+.black li:nth-of-type(4) {
+    grid-area: 1 / 7;
+}
+
+.black li:nth-of-type(5) {
+    grid-area: 1 / 9;
+}
+
+.black li:nth-of-type(6) {
+    grid-area: 2 / 2;
+}
+
+.black li:nth-of-type(7) {
+    grid-area: 2 / 4;
+}
+
+.black li:nth-of-type(8) {
+    grid-area: 2 / 6;
+}
+
+.black li:nth-of-type(9) {
+    grid-area: 2 / 8;
+}
+
+.black li:nth-of-type(10) {
+    grid-area: 2 / 10;
+}
+
+.black li:nth-of-type(11) {
+    grid-area: 3 / 1;
+}
+
+.black li:nth-of-type(12) {
+    grid-area: 3 / 3;
+}
+
+.black li:nth-of-type(13) {
+    grid-area: 3 / 5;
+}
+
+.black li:nth-of-type(14) {
+    grid-area: 3 / 7;
+}
+
+.black li:nth-of-type(15) {
+    grid-area: 3 / 9;
+}
+
+.black li:nth-of-type(16) {
+    grid-area: 4 / 2;
+}
+
+.black li:nth-of-type(17) {
+    grid-area: 4 / 4;
+}
+
+.black li:nth-of-type(18) {
+    grid-area: 4 / 6;
+}
+
+.black li:nth-of-type(19) {
+    grid-area: 4 / 8;
+}
+
+.black li:nth-of-type(20) {
+    grid-area: 4 / 10;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pagination button {
+    width: 200px;
+    height: 200px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.new-game-btn {
+    background-color: #fffa9b;
+    margin-bottom: 25px;
+}
+
+.chess-change-btn {
+    background-color: #fff;
+}
+
+.border {
+    border: 15px ridge #821a15;
+}
