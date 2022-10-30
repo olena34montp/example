@@ -1,0 +1,214 @@
+main {
+    max-width: 800px;
+}
+
+.container {
+    color: #ffffff;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px;
+    grid-template-areas: 
+        "courrier courrier calendrier calendrier photos chiffres"
+        "skype contacts bourse bourse explorer aide"
+        "liste-lecture drive . . cartes sante"
+        "bureau bureau . . actu actu";
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courrier {
+    grid-area: courrier;
+    background-color: #70818f;
+}
+
+.calendrier {
+    grid-area: calendrier;
+    background-color: #7f0080;
+}
+
+.photos {
+    grid-area: photos;
+    background-color: #2e8b59;
+}
+
+.container .chiffres {
+    grid-area: chiffres;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.chiffres div {
+    min-width: 48%;
+    min-height: 48%;
+}
+
+.chiffres div:nth-of-type(1) {
+    background-color: #ff0000;
+    margin-bottom: 2%;
+}
+.chiffres div:nth-of-type(2) {
+    background-color: #ffa500;
+    margin-bottom: 2%;
+}
+.chiffres div:nth-of-type(3) {
+    background-color: #30cd32;
+}
+.chiffres div:nth-of-type(4) {
+    background-color: #000080;
+}
+
+.skype {
+    grid-area: skype;
+    background-color: #4169e1;
+}
+
+.contacts {
+    grid-area: contacts;
+    background-color: #fe0100;
+}
+
+.bourse {
+    grid-area: bourse;
+    background-color: #33cd32;
+}
+
+.explorer {
+    grid-area: explorer;
+    background-color: #4169e1;
+}
+
+.aide {
+    grid-area: aide;
+    background-color: #fe0100;
+}
+
+.liste-lecture {
+    grid-area: liste-lecture;
+    background-color: #fe0100;
+}
+
+.drive {
+    grid-area: drive;
+    background-color: #4169e1;
+}
+
+.cartes {
+    grid-area: cartes;
+    background-color: #7f0080;
+}
+
+.sante {
+    grid-area: sante;
+    background-color: #fe0100;
+}
+
+.bureau {
+    grid-area: bureau;
+    background-color: #33cd32;
+}
+
+.actu {
+    grid-area: actu;
+    background-color: #7f0080;
+}
+
+/* Grid 2*/
+/*
+.container {
+    color: #ffffff;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px;
+    grid-template-areas: 
+        "courrier courrier calendrier calendrier photos chiffres"
+        "skype contacts bourse bourse explorer aide"
+        "liste-lecture drive . . cartes sante"
+        "bureau bureau . . actu actu";
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courrier {
+    grid-area: courrier;
+    background-color: #70818f;
+}
+
+.calendrier {
+    grid-area: calendrier;
+    background-color: #7f0080;
+}
+
+.photos {
+    grid-area: photos;
+    background-color: #2e8b59;
+}
+
+.chiffres {
+    grid-area: chiffres;
+    background-color: #fff;
+}
+
+.skype {
+    grid-area: skype;
+    background-color: #4169e1;
+}
+
+.contacts {
+    grid-area: contacts;
+    background-color: #fe0100;
+}
+
+.bourse {
+    grid-area: bourse;
+    background-color: #33cd32;
+}
+
+.explorer {
+    grid-area: explorer;
+    background-color: #4169e1;
+}
+
+.aide {
+    grid-area: aide;
+    background-color: #fe0100;
+}
+
+.liste-lecture {
+    grid-area: liste-lecture;
+    background-color: #fe0100;
+}
+
+.drive {
+    grid-area: drive;
+    background-color: #4169e1;
+}
+
+.cartes {
+    grid-area: cartes;
+    background-color: #7f0080;
+}
+
+.sante {
+    grid-area: sante;
+    background-color: #fe0100;
+}
+
+.bureau {
+    grid-area: bureau;
+    background-color: #33cd32;
+}
+
+.actu {
+    grid-area: actu;
+    background-color: #7f0080;
+}*/
