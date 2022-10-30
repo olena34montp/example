@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 900px;
+    margin: 20px 0 0 20px;
+}
+
+main {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 100px 100px 150px 100px 100px;
+    grid-template-areas: 
+        "v1 v1 v1 v1 v1 v1 v2"
+        "v3 b1 b1 b1 b1 b2 v2"
+        "v3 b3 c1 c1 c1 b2 v2"
+        "v3 b3 b4 b4 b4 b4 v2"
+        "v3 v4 v4 v4 v4 v4 v4";
+}
+
+div {
+    background-color: aquamarine;
+    min-height: 50px;
+}
+.rectangle1 {
+    grid-area: v1;
+}
+
+.rectangle2 {
+    grid-area: v2;
+}
+
+.rectangle3 {
+    grid-area: v3;
+}
+
+.rectangle4 {
+    grid-area: b1;
+}
+
+.rectangle5 {
+    grid-area: b2;
+}
+
+.rectangle6 {
+    grid-area: b3;
+}
+
+.rectangle7 {
+    grid-area: c1;
+}
+
+.rectangle8 {
+    grid-area: b4;
+}
+
+.rectangle9 {
+    grid-area: v4;
+}
+
+.bg-vert {
+    background-color: #d6e8d5;
+    border: 2px solid #a2c68e;
+}
+
+.bg-blue {
+    background-color: #dae8fc;
+    border: 2px solid #90aace;
+}
+
+.bg-beige {
+    background-color: #ffe6cc;
+    border: 2px solid #e0ae4b;
+}
