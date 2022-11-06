@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color {
+    width: 200px;
+    height: 400px;
+    background-color: red;
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape){
+    .color {
+        width: 400px;
+        height: 600px;
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) and (orientation: landscape){
+    .color {
+        width: 500px;
+        height: 700px;
+        background-color: cadetblue;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .color {
+        width: 600px;
+        height: 800px;
+        background-color: cornflowerblue;
+    }
+}
