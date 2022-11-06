@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boite {
+    display: flex;
+    list-style: none;
+    max-width: 800px;
+}
+
+.boite li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    padding: 20px;
+    background-color: cadetblue;
+    margin-left: 10px;
+}
+
+.boite li:nth-of-type(even) {
+    display: none;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .boite li:nth-of-type(even) {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .boite li:nth-of-type(odd) {
+        display: none;
+    }
+    .boite li:nth-of-type(even) {
+        display: flex;
+    }
+}
+
