@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 700px;
+}
+
+.boite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
+    background-color: cornflowerblue;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1000px;
+    }
+
+    .boite {
+        padding: 20px;
+        margin: 0;
+    }
+}
